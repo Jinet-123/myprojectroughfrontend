@@ -63,11 +63,6 @@ export const becomesellerapi = async (reqbody,reqheader) =>{
     return await commonapi("POST",`${baseurl}/becomeseller`,reqbody,reqheader)
 }
 
-// sort and filter
-export const sortFilterPropsAPI = async (data) => {
-  return await axios.post(`${baseurl}/sort-filter-properties`,data);
-}
-
 // if interested 
 export const addInterestedApi = async (reqbody) => {
   return await commonapi("POST",`${baseurl}/interested`,reqbody,{})
@@ -97,6 +92,12 @@ export const deleteWishlistApi = async (id) => {
 export const getWishlistApi = async (userEmail) => {
   return await commonapi("GET", `${baseurl}/wishlist/${userEmail}`, "")
 }
+
+// get landing properties
+export const getlandingPropertiesAPI = async () => {
+  return await commonapi("GET", `${baseurl}/landingproperties`);
+};
+
 
 
 //....................admin.............................//

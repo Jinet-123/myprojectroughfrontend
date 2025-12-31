@@ -10,7 +10,7 @@ import Allusers from './Admin/Allusers'
 import Allrequests from './Admin/Allrequests'
 import Adminsidebar from './Admin/Adminsidebar'
 import Sellersidebar from './Seller/Sellersidebar'
-import Sellerdashboard from './Seller/Sellerdashboard'
+
 import Sellerproperties from './Seller/Sellerproperties'
 import Approved from './Seller/Approved'
 import Addprops from './Seller/Addprops'
@@ -41,12 +41,12 @@ function App() {
 
 
         {/* seller */}
-        <Route path='/sellerdashboard' element={<Sellerdashboard />} />
+        
         <Route path='/sellerprops' element={<Sellerproperties />} />
         <Route path='/addprops' element={<Addprops />} />
         <Route path='/approved' element={<Approved />} />
         <Route path='/sellersidebar' element={<Sellersidebar />} />
-
+      <Route path='/requestfromusers' element={<Requestsfromusers />} />
 
         {/* users */}
         <Route path='/wishlist' element={<Wishlist />} />
@@ -61,8 +61,6 @@ function App() {
         <Route path='/profile' element={<Profile />} />
         <Route path='/propertyhome' element={<Propertyhome />} />
         <Route path='/viewproperty/:id' element={<Viewpropertyy />} />
-
-        {/* rough */}
         <Route path='/land' element={<Landproperty />} />
         <Route path='/house' element={<Houseproperty />} />
         <Route path='/flat' element={<Flatorapartproperty />} />
@@ -70,7 +68,7 @@ function App() {
         <Route path='/commercial' element={<Commercialproperty />} />
         <Route path='/industrial' element={<Industrialproperty />} />
         <Route path='/becomeseller' element={<Becomeseller />} />
-        <Route path='/requestfromusers' element={<Requestsfromusers />} />
+        
 
       </Routes>
 

@@ -3,6 +3,7 @@ import { FaRegEdit } from 'react-icons/fa'
 import { toast } from 'react-toastify'
 import { updateprofileapi } from '../../services/allapi'
 import baseurl from '../../services/baseurl'
+import { ProfileContext } from '../../context/ProfileContext'
 
 
 function Editprofile() {
@@ -20,7 +21,7 @@ function Editprofile() {
     const [token,settoken] = useState("")
     const [existingprofile,setexistingprofile] = useState("")
 
-    
+    const { profile, setProfile } = useContext(ProfileContext);
 
     console.log(userdetails);
     console.log(existingprofile);
@@ -54,7 +55,9 @@ function Editprofile() {
         if(result.status == 200){
             toast.success('updated successfully')
             sessionStorage.setItem("existinguser",JSON.stringify(result.data))
+            setProfile(result.data)
             setoffcanvas(false)
+            
         }else{
                 toast.error("something went wrong")
         }
@@ -80,6 +83,7 @@ function Editprofile() {
             const user = JSON.parse(sessionStorage.getItem("existinguser"))
             setuserdetails({username : user.username,password: user.password,confirmpassword :user.password,bio : user.bio, role :user.role})
             setexistingprofile(user.profile)
+            
         }
     },[])
     

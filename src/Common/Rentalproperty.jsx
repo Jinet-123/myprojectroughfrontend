@@ -118,7 +118,7 @@ function Landproperty({property}) {
           <div>
             <div className='shadow p-6 mr-10'>
               <h1 className='text-xl'>Price </h1>
-              <h1 className='text-5xl'>₹ {property.price}</h1>
+              <h1 className='text-5xl'>₹ {property.price || property.rent}</h1>
             </div>
             <div className='shadow p-9 mt-5 mr-10'>
               <h1 className='text-xl text-red-500'>Interested ?</h1>

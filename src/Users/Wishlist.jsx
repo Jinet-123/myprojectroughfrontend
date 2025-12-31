@@ -45,17 +45,18 @@ const deleteWishlist = async (id) => {
 
   return (
     <>
-      <h1 className='text-2xl text-center mt-9'>Wishlist : </h1>
-<div className='grid grid-cols-3'>
-  {wishlist?.map((wishdetails)=>(
-      <div className='shadow w-110 h-70 ms-10 mt-20'>
-        <img src={`${baseurl}/Imguploads/${wishdetails?.propertyImage}`} alt="" style={{width:"300px",height:"200px",marginLeft:"50px",paddingTop:"20px"}}/>
-        <h1 className='text-xl ms-5 mt-2'>Title : {wishdetails?.propertyTitle}</h1>
-        <h1 className='text-xl ms-5 mt-2'>Price : ₹{wishdetails?.propertyPrice}</h1>
-        <button onClick={()=>deleteWishlist(wishdetails?._id)} className='bg-red-500 text-white border-2 w-15 h-8 hover:bg-white hover:text-red-600 hover:border-red-800 rounded ms-90 mt-5'>Delete</button>
-        
-      </div>))}
-    </div>
+     <div className='bg-zinc-200 h-screen'>
+        <h1 className='text-2xl text-center pt-9'>Wishlist : </h1>
+  <div className='grid grid-cols-3'>
+    {wishlist?.map((wishdetails)=>(
+        <div className='shadow w-110 h-70 ms-10 mt-20'>
+          <img src={`${baseurl}/Imguploads/${wishdetails?.propertyImage}`} alt="" style={{width:"300px",height:"200px",marginLeft:"50px",paddingTop:"20px"}}/>
+          <h1 className='text-xl ms-5 mt-2'>Title : {wishdetails?.propertyTitle}</h1>
+          <h1 className='text-xl ms-5 mt-2'>Price : ₹{wishdetails?.propertyPrice}</h1>
+          <button onClick={()=>deleteWishlist(wishdetails?._id)} className='bg-red-500 text-white border-2 w-15 h-8 hover:bg-white hover:text-red-600 hover:border-red-800 rounded ms-90 mt-5'>Delete</button>
+        </div>))}
+      </div>
+     </div>
     </>
   )
 }

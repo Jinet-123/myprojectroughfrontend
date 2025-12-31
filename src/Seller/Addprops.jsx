@@ -6,6 +6,7 @@ import { PiBuildingApartmentFill, PiHouseFill } from 'react-icons/pi';
 import { RiBuilding2Fill } from 'react-icons/ri';
 import { addpropertyapi } from '../../services/allapi';
 import { toast } from 'react-toastify';
+import Sellersidebar from './Sellersidebar';
 
 function Addprops() {
 
@@ -88,7 +89,6 @@ console.log(alluploadimages);
 
     return (
         <>
-
 
             <div className='pt-10 bg-zinc-900'>
 

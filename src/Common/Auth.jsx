@@ -77,7 +77,7 @@ function Auth({ register }) {
     navigate("/admindashboard")
   }
   else if (user.role === "seller") {
-    navigate("/sellerdashboard")
+    navigate("/sellerprops")
   }
   else {
     navigate("/")

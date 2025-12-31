@@ -3,6 +3,7 @@ import { MdDashboard } from "react-icons/md";
 import { FaUserSecret } from "react-icons/fa";
 import { FaCodePullRequest } from "react-icons/fa6";
 import { ImBlocked } from "react-icons/im";
+import { Link } from 'react-router-dom';
 
 function Adminsidebar() {
   return (
@@ -17,15 +18,15 @@ function Adminsidebar() {
                 </div>
                 <div className='flex mt-9'>
                     <MdDashboard className='text-orange-500 text-3xl'/>
-                    <h1 className='text-white ms-2 text-md mt-1 hover:text-orange-400 cursor-pointer'>DASHBOARD</h1>
+                   <Link to={"/admindashboard"}> <h1 className='text-white ms-2 text-md mt-1 hover:text-orange-400 cursor-pointer'>DASHBOARD</h1></Link>
                 </div>
                 <div className='flex mt-8'>
                     <FaUserSecret className='text-orange-500 text-3xl'/>
-                    <h1 className='text-white ms-2 text-md mt-1 hover:text-orange-400 cursor-pointer'>ALL-USERS</h1>
+                    <Link to={"/allusers"}><h1 className='text-white ms-2 text-md mt-1 hover:text-orange-400 cursor-pointer'>ALL-USERS</h1></Link>
                 </div>
                 <div className='flex mt-8'>
                     <FaCodePullRequest className='text-orange-500 text-3xl'/>
-                    <h1 className='text-white ms-2 text-md mt-1 hover:text-orange-400 cursor-pointer'>REQUESTS</h1>
+                    <Link to={"/allrequests"}><h1 className='text-white ms-2 text-md mt-1 hover:text-orange-400 cursor-pointer'>REQUESTS</h1></Link>
                 </div>
                     
                 
