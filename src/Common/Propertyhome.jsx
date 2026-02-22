@@ -82,8 +82,8 @@ function Propertyhome() {
                 <div className='flex bg-black h-12'>
 
                     <div className='flex text-white gap-10 ms-170 mt-3'>
-                        <h1 className='hover:text-orange-500 cursor-pointer'>Home</h1>
-                        <h1 className='hover:text-orange-500 cursor-pointer'>Profile</h1>
+                        <h1 className='hover:text-orange-500 cursor-pointer'><Link to={"/"}>Home</Link></h1>
+                        <h1 className='hover:text-orange-500 cursor-pointer'><Link to={"/profile"}>Profile</Link></h1>
                     </div>
                     <div className='flex ms-100 gap-3'>
                         {profile?.profile ? (

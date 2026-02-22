@@ -3,12 +3,14 @@ import { FaEdit } from "react-icons/fa";
 import Editprofile from './Editprofile';
 import baseurl from '../../services/baseurl';
 import { ProfileContext } from '../../context/ProfileContext';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 
 function Profile() {
 
   const { profile } = useContext(ProfileContext);
+
+  const navigate = useNavigate()
 
 const handleLogout = () => {
     sessionStorage.removeItem("existinguser");

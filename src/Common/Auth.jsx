@@ -113,7 +113,7 @@ function Auth({ register }) {
           </div>
           <div className='mt-24 ms-20'>
             {register ? <h1 className='text-4xl text-white'>Create An Account</h1> : <h1 className='text-4xl text-white'>Login</h1>}
-            {register ? <h1 className='text-md mt-5 text-white'>Already have an account <Link className='text-blue-500 underline'>Login</Link></h1> : <h1 className='text-md mt-5 text-white'>Not a User <Link className='text-blue-500 underline'>Register</Link></h1>}
+            {register ? <h1 className='text-md mt-5 text-white'>Already have an account <Link to={"/login"} className='text-blue-500 underline'>Login</Link></h1> : <h1 className='text-md mt-5 text-white'>Not a User <Link to={"/register"} className='text-blue-500 underline'>Register</Link></h1>}
             {register ? <div>
               <input value={userdetails?.username} onChange={(e)=>setuserdetails({...userdetails,username : e.target.value})} type="text" className='w-120 mt-8 h-12 border-3 rounded-md  border-blue-900 bg-gray-400' placeholder='Enter Username' /><br />
               <input value={userdetails?.email} onChange={(e)=>setuserdetails({...userdetails,email : e.target.value})} type="text" className='w-120 h-12 border-3 rounded-md mt-5 border-blue-900 bg-gray-400' placeholder='Enter Email' /><br />
