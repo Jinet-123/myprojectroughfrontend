@@ -72,19 +72,19 @@ Backend:
 
 ## 📸 Screenshots
 ###  Homepage
-<img src="./screenshots/landing.png" width="800"/>
+<img src="./screenshots/Landing.png" width="800"/>
 
 ###  Propertydetails
-<img src="./screenshots/propertydetails.png" width="800"/>
+<img src="./screenshots/Propertydetails.png" width="800"/>
 
 ### Admindashboard
-<img src="./screenshots/admindashboard.png" width="800"/>
+<img src="./screenshots/Admindashboard.png" width="800"/>
 
 ### Sellerdashboard
-<img src="./screenshots/sellerdashboard.png" width="800"/>
+<img src="./screenshots/Sellerdashboard.png" width="800"/>
 
 ### Profile Section
-<img src="./screenshots/profile.png" width="800"/>
+<img src="./screenshots/Profile.png" width="800"/>
 
 ---
 
