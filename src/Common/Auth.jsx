@@ -42,7 +42,7 @@ function Auth({ register }) {
         })
 
       } else {
-        toast.error(`something went wrong`)
+        toast.error(`something Went Wrong`)
         setuserdetails({
           username: "",
           email: "",
@@ -92,7 +92,7 @@ function Auth({ register }) {
       } else if (result.status == 401) {
         toast.warning(result.response.data)
       } else {
-        toast.error(`something went wrong`)
+        toast.error(`User Not Found Please Register`)
         setuserdetails({
           username: "",
           email: "",

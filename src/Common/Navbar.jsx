@@ -51,7 +51,7 @@ function Navbar() {
 
         <div className='flex bg-black h-12'>
          
-          <div className='flex text-white gap-10 ms-160 mt-3'>
+          <div className='flex text-white gap-10 ms-170 mt-3'>
             <Link to={"/"}><h1 className='hover:text-orange-500 cursor-pointer'>Home</h1></Link>
             <button onClick={handleExploreMore} style={{marginTop:"-13px"}} className='hover:text-orange-500 cursor-pointer'>Allproperties</button>
           </div>
